@@ -1,0 +1,98 @@
+.signInContainer {
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.signInContainer .logo {
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.signInContainer h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.signInContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.signInContainer label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.signInContainer .fp {
+    font-weight: normal;
+    font-size: 12px;
+    color: #0066c0;
+    text-decoration: none;
+    float: right;
+}
+
+.signInContainer input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+  
+.signInButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signInButton:hover {
+    background-color: #e7b33c;
+  }
+  .agreement {
+    font-size: 12px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .agreement a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+
+  .agreement a:hover {
+    text-decoration: underline;
+  }
+
+  .terms {
+    font-size: 12px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+
+  .createAccount {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .createAccount a {
+    color: #0066c0;
+    text-decoration: none;
+  }
+  
+  .createAccount a:hover {
+    text-decoration: underline;
+  }

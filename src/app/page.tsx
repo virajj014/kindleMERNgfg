@@ -1,95 +1,54 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+import React from 'react'
+import styles from './page.module.css'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
-export default function Home() {
+const page = () => {
+  const router = useRouter()
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className={styles.c1}>
+      <div className={styles.c11}>
+        <Image
+          src="https://m.media-amazon.com/images/G/01/kfw/landing/img_logo._CB611756372_.png"
+          alt="Amazon Logo"
+          className={styles.logo}
+          width={500} // specify the width
+          height={500} // specify the height
+        />
+        <p className={styles.t1}>Take your stories wherever you go</p>
+
+        <div className={styles.btnRow}>
+          <button className={styles.btn1}
+            onClick={() => {
+              router.push('/signup')
+            }}
+          >Create an Amazon account</button>
+
+          <button className={styles.btn2}
+            onClick={() => {
+              router.push('/login')
+            }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+            <Image src="https://m.media-amazon.com/images/G/01/kfw/landing/icon-amazon-a._CB611757832_.png"
+              alt="Amazon Logo"
+              className={styles.btnicon}
+              width={20} // specify the width
+              height={20} // specify the height
             />
-          </a>
+            <span>Sign in with your account</span>
+          </button>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+      <Image src="	https://m.media-amazon.com/images/G/01/kfw/landing/img_kindleWeb_IN._CB610886625_.png"
+        alt="Amazon Logo"
+        className={styles.bottomimg}
+        width={1000} // specify the width
+        height={500} // specify the height 
+      />
+    </div>
+  )
 }
+
+export default page
